@@ -1,0 +1,120 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+li{list-style: none;}
+a{text-decoration: none; color:inherit; display:block;}
+.cf:after{content:""; clear:both; display:block;}
+
+#wrap{position: relative;}
+section{
+    position: relative; height:100vh; background:#0d0514; 
+    /* top:-20px;  */
+    overflow: hidden;
+}
+
+/* ----- About Me ----- */
+.counter{
+    width:300px;
+    position: relative;
+    top:calc(50% - 75px);
+}
+.counter li{
+    width:10px; height: 10px;
+    border-radius:50%;
+    background:#fff;
+    margin:20px 0 20px 180px;
+    cursor: pointer;
+}
+.counter li.now{background:rgb(202, 78, 78);}
+
+.main{
+    width:400px; height: 230px;
+    /* border:1px #fff solid; */
+    position: relative;
+    top:calc(50% - 250px);
+    left:25%;
+}
+.main h3{
+    font-size:4rem;
+    font-weight: blod;
+    color:#fff;
+}
+.main p{
+    margin:20px 0;
+    color:#fff;
+}
+
+.sub{
+    width:450px;
+    position: relative;
+    left:25%;
+    top:230px;
+}
+.sub h4{
+    font-size:1.3rem;
+    font-weight: bold;
+    color:#fff;
+}
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    margin:10px 0;
+}
+.skills li{
+    width:80px;
+    color:#fff;
+    margin:0 20px 5px 0;
+}
+
+.linkwrap{
+    width:1120px; height: 1120px;
+    position: absolute;
+    transform:rotate(45deg) scale(0.8);
+    /* top:-500px; */
+    top:calc(50% - 500px);
+    left:28%;
+}
+.linkwrap li{
+    width:550px; height: 550px;
+    background:aliceblue;
+    position: absolute;
+    
+}
+.link1{top:5px; left:5px;}
+.link2{top:5px;left:565px;}
+.link3{top:565px; left:565px;}
+
+
+/*  ----- #link1 -----  */
+.bbox{
+    width:930px; height: 930px;
+    /* outline:1px #FFF solid; */
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+    top:2.5%;
+    left:20%;
+    transform:rotate(45deg);
+}
+#link1 .box{
+    width:300px; height: 300px;
+    margin:5px;
+    background:aliceblue;
+    position: relative;
+    transition:all 0.3s;
+    z-index:10;
+}
+#link1 .box.none{opacity: 0;}
+
+#link1 .subbox{background:#2c1c60; z-index:5;}
+#link1 .subbox:after{
+    content:""; 
+    width:260px; height:260px; 
+    background:#564d71; 
+    position: absolute; top:20px; left:20px;
+}
+#link1 .box:nth-child(4){top:310px;}
+#link1 .box:nth-child(8){left:-310px;}
+#link1 .box:nth-child(2){top:310px;}
+#link1 .box:nth-child(6){left:-310px;}
+
+

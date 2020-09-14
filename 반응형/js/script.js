@@ -1,0 +1,10 @@
+$(".open").click(
+    function(){
+        $("nav").stop().slideDown(400);
+    }
+);
+$(".close").click(
+    function(){
+        $("nav").stop().slideUp(300);
+    }
+);
